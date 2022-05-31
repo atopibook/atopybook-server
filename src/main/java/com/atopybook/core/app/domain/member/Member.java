@@ -1,4 +1,4 @@
-package com.atopybook.core.app.member;
+package com.atopybook.core.app.domain.member;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,6 +9,8 @@ import javax.persistence.Id;
 public class Member {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Id
-    Long id;
-
+    private Long id;
+    private String name;
 }
+
+
