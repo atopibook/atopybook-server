@@ -1,6 +1,7 @@
 package com.atopybook.core.app.repository;
 
 import com.atopybook.core.app.domain.member.Member;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
