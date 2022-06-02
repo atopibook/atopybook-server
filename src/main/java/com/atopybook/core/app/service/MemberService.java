@@ -15,6 +15,8 @@ public class MemberService {
     @Transactional
     public Long join(String name) {
         Member member = Member.builder().name(name).build();
-        return memberRepository.save(member);
+        Member savedMember = memberRepository.save(member);
+
+        return savedMember.getId();
     }
 }
